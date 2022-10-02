@@ -1,10 +1,12 @@
 #include<iostream>
 using namespace std;
 
+//Solution code, this is where the problem is being solved
 bool solution(string s ){
     bool isEven;
     int charArr[256] = {0};
- 
+ //for loop.
+    // because loops are good XD
     for(int i = 0; i < s.length(); i++){
             charArr[(int)s[i]]++;
     }
@@ -33,6 +35,7 @@ bool solution(string s ){
 }
 
 int main(){
+    //test case inputs calling the solution function which returns a bool value, either true or false.
     cout<<solution("racecar")<<endl;
     cout<<solution("racacer")<<endl;
     cout<<solution("racing")<<endl;
